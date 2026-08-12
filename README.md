@@ -1,5 +1,15 @@
-# Morgan Corp Todos
+# Morgan Corp Office Action Items
 
-Smartsheet-backed Next.js prototype.
+Python-only prototype for StoreyPM / Morgan Corp Office 2614.
 
-Set SMARTSHEET_ACCESS_TOKEN and SMARTSHEET_SHEET_ID=7586973395931012 on Vercel.
+## Run
+
+Use python3 on server.py in this folder. Open http://localhost:8787
+
+## Live data
+
+Set SMARTSHEET_ACCESS_TOKEN in env or .env.local. Never commit secrets. Fallback is data/todos.json.
+
+## Notes
+
+Read-only prototype. Data from Smartsheet. StoreyPM. Vercel deploy later. Bind 0.0.0.0 port 8787.

@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(1200px 500px at 10% -10%, rgba(31, 78, 121, 0.08), transparent 55%),
+    radial-gradient(900px 400px at 90% 0%, rgba(31, 78, 121, 0.05), transparent 50%),
+    #f7f5f2;
+  color: #0f172a;
+}
+
+@layer utilities {
+  .line-clamp-2-pretty {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+  }
+}
